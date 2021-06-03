@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+<center>
+    <a data-fancybox="gallery" href="images/1.jpg" data-caption="My caption"><img src="images/1.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/2.jpg" data-caption="My caption"><img src="images/2.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/3.jpg" data-caption="My caption"><img src="images/3.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/4.jpg" data-caption="My caption"><img src="images/4.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/5.jpg" data-caption="My caption"><img src="images/5.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/6.jpg" data-caption="My caption"><img src="images/6.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/7.jpg" data-caption="My caption"><img src="images/7.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/8.jpg" data-caption="My caption"><img src="images/8.jpg"></a>
+
+    <a data-fancybox="gallery" href="images/9.jpg" data-caption="My caption"><img src="images/9.jpg"></a>
+</center>
+
+<script type="text/javascript">
+    $('[data-fancybox]').fancybox({
+        loop: true,
+        buttons: [
+            "zoom",
+            "share",
+            "slideShow",
+            "fullScreen",
+            //"download",
+            "thumbs",
+            "close"
+        ],
+        animationEffect: "zoom-in-out",
+        transitionEffect:"zoom-in-out"
+    });
+</script>
+</body>
+</html>
